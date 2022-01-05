@@ -3,23 +3,22 @@
     margin: 0;
 }
 
+
 body{
     background-size: cover;
 }
 
 header{
     background-color: aliceblue;
-    height: 5em;
+    height: 5px;
 }
 
-/*img{
-    margin-left: 30px;
-}*/
+
 
 .head-tag{
     float: right;
-    margin-top: 30px;
-    margin-right: 50px;
+    margin-top: 10px;
+    margin-right: 40px;
 }
 
 .head-tag a{
@@ -94,4 +93,63 @@ header{
     content: "\e409";
 }
 
+.text-box h1{
+    font-size: 100px;
+    font-weight: 500;
+}
+
+
+.text-box{
+    color: #blue;
+    position: absolute;
+    top: 10%;
+    bottom: 8%;
+
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 60;
+
+}
+
+.text-box h1{
+        font-size: 190px;
+        line-height: 160px;
+        margin-left: -10px;
+        color: #bluet;
+        -webkit-text-stroke: 1px #ffff;
+        background: url(./images/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 8s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 200px 0;
+    }
+}
+
+.text-box h2{
+    font-size: 40px;
+    line-height: 80%;
+
+}
+
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   margin-top: 30px; 
+}
+
+.text-box a{
+    color: #yellow;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #ffff;
+
+}
 

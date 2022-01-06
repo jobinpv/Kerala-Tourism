@@ -4,6 +4,7 @@
 }
 
 
+
 body{
     background-size: cover;
 }
@@ -82,14 +83,14 @@ header{
 .carousel-control-prev-icon {
     font-family: Material Icons;
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     content: "\e408";
 }
 
 .carousel-control-next-icon  {
     font-family: Material Icons;
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     content: "\e409";
 }
 
@@ -152,4 +153,3 @@ header{
     border: 2px solid #ffff;
 
 }
-

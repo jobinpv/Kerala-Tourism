@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login screen</title>
+    <link rel="stylesheet" href="./css/stylelog.css">
+</head>
+<body>
+
+    <div class="hero">
+            <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+                        <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+                    </div>
+
+                    <div class="social-icons">
+                        <img src="./login-reg-img/fb.png" alt="Facebook">
+                        <img src="./login-reg-img/tw.png" alt="Twitter">
+                        <img src="./login-reg-img/gp.png" alt="Google">
+            
+                        </div>
+
+                            <form action="./index.html" id="login" class="input-group">
+                            <input type="text" class="input-field" placeholder="User Id"required>
+                            <input type="password" class="input-field" placeholder="Enter Password"required>
+                            <input type="checkbox" class="check-box" required><span>Remember Password</span>
+                            <button type="submit" class="submit-btn">Log in</button>
+                            </form>
+
+                            <form action="./index.html" id="register" class="input-group" onsubmit="return function();">
+                                <input type="text" id="user" class="input-field" placeholder="User Id" required>
+                                <input type="email" id="email" class="input-field" placeholder="Email Id" required>
+                                <input type="password" id="pwd" class="input-field" placeholder="Enter Password"required>
+                                <input type="password" id="cpwd" class="input-field" placeholder="Retype Password"required>
+                                <input type="number" id="pho" class="input-field" maxlength="10" minlength="10" placeholder="Enter Mobile number without code"required >
+                                <input type="checkbox" class="check-box" required><span>I agree to the <a href="./terms.html">terms and conditions</a></span>
+                                <label for="error" id="error"></label>
+                                <button type="submit" class="submit-btn">Register</button>
+                                </form>
+
+            </div>
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div>
+            
+
+    </div>
+
+    <script src="./js/abc.js"></script>
+    
+</body>
+</html>

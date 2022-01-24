@@ -78,6 +78,7 @@ header{
 
 .card-body{
     text-decoration: none;
+    width: 100%;
 }
 
 .carousel-control-prev-icon {

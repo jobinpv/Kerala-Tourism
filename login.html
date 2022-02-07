@@ -24,34 +24,32 @@
             
                         </div>
 
-                            <form action="./index.html" id="login" class="input-group">
-                            <input type="text" class="input-field" placeholder="User Id"required>
-                            <input type="password" class="input-field" placeholder="Enter Password"required>
+                            <form action="./index.html" onsubmit="return lvalidate()" id="login" class="input-group">
+                            <input type="email" id="loguser" class="input-field" placeholder="User Id"required>
+                            <input type="password" id="logpass" class="input-field" placeholder="Enter Password"required>
                             <input type="checkbox" class="check-box" required><span>Remember Password</span>
                             <button type="submit" class="submit-btn">Log in</button>
                             </form>
 
-                            <form action="./index.html" id="register" class="input-group" onsubmit="return function();">
-                                <input type="text" id="user" class="input-field" placeholder="User Id" required>
-                                <input type="email" id="email" class="input-field" placeholder="Email Id" required>
-                                <input type="password" id="pwd" class="input-field" placeholder="Enter Password"required>
-                                <p class="strength" id="length"></p>
-                                <input type="password" id="cpwd" class="input-field" placeholder="Retype Password"required>
-                                <input type="number" id="pho" class="input-field" maxlength="10" minlength="10" placeholder="Enter Mobile number without code"required >
+                            <form action="./index.html" id="register" class="input-group" onsubmit="return svalidate();">
+                                <input type="text" id="suser" class="input-field" placeholder="User Id" required>
+                                <input type="email" id="semail" class="input-field" placeholder="Email Id" required>
+                                <input type="password" id="spwd" class="input-field" placeholder="Enter Password"required>
+                               
+                                <input type="password" id="srpwd" class="input-field" placeholder="Retype Password"required>
+                                <p class="">Password Strength :</p>
+                                <div id="typepass">
+                                <div id="strengthResult">
+                                </div>
+                                </div>
+                                <input type="number" id="spho" class="input-field" maxlength="10" minlength="10" placeholder="Enter Mobile number without code"required >
                                 <input type="checkbox" class="check-box" required><span>I agree to the <a href="./terms.html">terms and conditions</a></span>
                                 <label for="error" id="error"></label>
                                 <button type="submit" class="submit-btn">Register</button>
                                 </form>
 
             </div>
-            <div id="message">
-                <h3>Password must contain the following:</h3>
-                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                <p id="number" class="invalid">A <b>number</b></p>
-                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-              </div>
-            
+       
 
     </div>
 
